@@ -1,0 +1,21 @@
+(
+ ("vanilla" . ((user-emacs-directory   . "~/emacs/configs/vanilla")))
+ ("doom"    . ((user-emacs-directory   . "~/emacs/flavors/doom")
+               (env . (("DOOMDIR"      . "~/emacs/configs/doom")))))
+("default"  . ((user-emacs-directory . "~/emacs/flavors/spacemacs-default")
+              (env . (("SPACEMACSDIR" . "~/emacs/configs/spacemacs-default")))))
+("develop"  . ((user-emacs-directory . "~/emacs/flavors/spacemacs-develop")
+              (env . (("SPACEMACSDIR" . "~/emacs/configs/spacemacs-develop")))))
+ ;; SPACEMACS MULTIPLE CONFIGURATIONS STARTS HERE
+("spacemacs-test" . ((user-emacs-directory . "~/emacs/flavors/spacemacs-test")
+(env . (("SPACEMACSDIR" . "~/emacs/configs/spacemacs-test")))))
+("spacemacs-pietrodito" . ((user-emacs-directory . "~/emacs/flavors/spacemacs-pietrodito")
+(env . (("SPACEMACSDIR" . "~/emacs/configs/spacemacs-pietrodito")))))
+("spacemacs-minimal" . ((user-emacs-directory . "~/emacs/flavors/spacemacs-minimal")
+(env . (("SPACEMACSDIR" . "~/emacs/configs/spacemacs-minimal")))))
+("spacemacs-develop" . ((user-emacs-directory . "~/emacs/flavors/spacemacs-develop")
+(env . (("SPACEMACSDIR" . "~/emacs/configs/spacemacs-develop")))))
+("spacemacs-default" . ((user-emacs-directory . "~/emacs/flavors/spacemacs-default")
+(env . (("SPACEMACSDIR" . "~/emacs/configs/spacemacs-default")))))
+ ;; SPACEMACS MULTIPLE CONFIGURATIONS ENDS HERE
+ )

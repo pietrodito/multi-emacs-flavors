@@ -1,0 +1,11 @@
+(add-hook 'ess-mode-hook
+          (lambda ()
+            (define-key ess-mode-map (kbd ";") 'ess-insert-assign)
+            (define-key ess-mode-map (kbd "C-;") 'ulys/ess-insert-magrittr-pipe)
+            (define-key ess-mode-map (kbd "C-:")
+              'ulys/ess-insert-right-assign-operator)
+            (define-key ess-mode-map (kbd "C-x C-j")
+              'ess-eval-line-invisibly-and-step)
+            (define-key ess-mode-map (kbd "C-`") 'ulys/ess-backquote-from-dollar)
+            (define-key ess-mode-map (kbd "C-~") 'ulys/ess-backquote-delete-df$)
+            ))
