@@ -2,7 +2,7 @@
 
 ## Choose an emacs directory
 
-You have to edit `00-run-installers.sh`:
+You have to edit `run-installers.sh`:
 
 - The line to be modified is this one:
 ```{bash}
