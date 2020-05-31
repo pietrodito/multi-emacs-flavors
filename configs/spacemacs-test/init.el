@@ -79,7 +79,7 @@ values."
      major-modes
      (markdown :variables markdown-live-preview-engine 'vmd)
      perl5
-     perl6
+     ;; perl6
      php
      plantuml
      (python :variables
@@ -108,7 +108,7 @@ values."
                  typescript-backend 'lsp
                  typescript-linter 'eslinthn
                  typescript-lsp-linter nil)
-     (yaml :variables yaml-enable-lsp t)nmn,mn
+     (yaml :variables yaml-enable-lsp t)
      ;; Readers
      (deft :variablesmn., ./bn
        deft-directory "~/Dropbox/deft")
@@ -176,7 +176,7 @@ values."
    '(
      flycheck-popup-tip
      (helm-gitignore :location local)
-     (rails-snippets :location local)
+     ;; (rails-snippets :location local)
      (react-snippets :location local)
      (redux-snippets :location local)
      (jest-snippets :location local)
@@ -591,12 +591,13 @@ See the header of this file for more information."
     (load (concat dotspacemacs-directory file-name))))
 
 (defun custom//require-all ()
-  (require 'rails-snippets)
-  (require 'react-snippets)
-  (require 'redux-snippets)
-  (require 'jest-snippets)
-  (require 'competitive-programming-snippets)
-  (require 'atcoder-tools))
+  ;; (require 'rails-snippets)
+  ;; (require 'react-snippets)
+  ;; (require 'redux-snippets)
+  ;; (require 'jest-snippets)
+  ;; (require 'competitive-programming-snippets)
+  ;; (require 'atcoder-tools)
+  )
 
 (defun dotspacemacs/user-init ()
   "Initialization for user code:

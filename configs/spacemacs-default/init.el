@@ -66,15 +66,19 @@
                                   :separator nil)
    dotspacemacs-themes '(spacemacs-dark
                          spacemacs-light)
-   dotspacemacs-default-font '("Source Code Pro"
-                               :size 13.0
+   dotspacemacs-default-font '(
+                               "Iosevka"
+                               ;; "Source Code Pro"
+                               :size 14.0
                                :weight normal
                                :width normal)
 
    dotspacemacs-leader-key "SPC"
    dotspacemacs-emacs-command-key "SPC"
    dotspacemacs-emacs-leader-key "M-m"
-   dotspacemacs-major-mode-emacs-leader-key (if window-system "<M-return>" "C-M-m")
+   dotspacemacs-major-mode-emacs-leader-key (if window-system
+                                              "<M-return>"
+                                              "C-M-m")
    dotspacemacs-default-layout-name "TODO"
    dotspacemacs-display-default-layout t
    dotspacemacs-auto-resume-layouts t
@@ -83,7 +87,7 @@
    dotspacemacs-enable-paste-transient-state t
    dotspacemacs-fullscreen-at-startup t
    dotspacemacs-mode-line-unicode-symbols nil
-   dotspacemacs-line-numbers 'visual
+   dotspacemacs-line-numbers nil
    dotspacemacs-search-tools '("ag" "rg" "pt" "ack" "grep")
    dotspacemacs-whitespace-cleanup 'all
    dotspacemacs-pretty-docs t
@@ -92,6 +96,7 @@
 
 (defun dotspacemacs/user-config ()
   (spacemacs/toggle-centered-point-globally-on)
+  (spacemacs/toggle-fill-column-indicator-on)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
