@@ -9,7 +9,11 @@
          helm-no-header t)
    emacs-lisp
 
-   org
+   (org :variables
+        org-want-todo-bindings t
+        org-enable-github-support t
+        org-enable-sticky-header t)
+
 
    ;; Project management
    (treemacs :variables
