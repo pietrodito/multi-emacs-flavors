@@ -7,5 +7,6 @@ mefs_indent_message "Cloning spacemacs repo..."
 
 cd $mefs_FLAVORDIR/spacemacs-develop
 git checkout develop
+git pull origin
 
 emacs --with-profile develop -nw
