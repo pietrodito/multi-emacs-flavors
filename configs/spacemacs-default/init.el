@@ -19,15 +19,14 @@
      (stats       :location local)
 
      ;; Programming assistance
+     (shell-scripts :variables
+                    shell-scripts-backend 'lsp)
      (auto-completion :variables
                       auto-completion-enable-snippets-in-popup t
                       auto-completion-enable-help-tooltip t
                       auto-completion-enable-sort-by-usage t
                       )
      syntax-checking
-
-     major-modes ;; Arch PKGBUILDs and Stan
-
      (lsp
       ;; :variables
       ;;     lsp-ui-remap-xref-keybindings t
@@ -35,13 +34,9 @@
       ;;     lsp-prefer-flymake nil
       ;;     lsp-ui-doc-enable nil
       ;; lsp-ui-sideline-show-diagnostics nil
-          )
-     (shell-scripts :variables
-                    shell-scripts-backend 'lsp)
-     julia
-     ;; (julia :variables
-     ;;        julia-backend 'lsp
-     ;;        julia-mode-enable-ess t)
+      )
+
+     major-modes ;; Arch PKGBUILDs and Stan
 
      )
    )
