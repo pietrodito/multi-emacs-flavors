@@ -19,7 +19,7 @@
    (treemacs :variables
              treemacs-use-follow-mode t
              treemacs-use-filewatch-mode t)
-   git
+   (git :variables git-magit-status-fullscreen t)
 
    ;; Misc
    (spell-checking :variables spell-checking-enable-by-default nil)
