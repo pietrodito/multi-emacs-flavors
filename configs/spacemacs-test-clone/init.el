@@ -64,7 +64,7 @@
    dotspacemacs-default-font '(
                                "Iosevka"
                                ;; "Source Code Pro"
-                               :size 14.0
+                               :size 13.0
                                :weight normal
                                :width normal)
 

@@ -1,3 +1,9 @@
+;; C-w C-hjkl to change window focus
+(define-key evil-window-map (kbd "C-h") 'evil-window-left)
+(define-key evil-window-map (kbd "C-l") 'evil-window-right)
+(define-key evil-window-map (kbd "C-k") 'evil-window-up)
+(define-key evil-window-map (kbd "C-j") 'evil-window-down)
+
 ;; C-h to delete buffer and C-S-h for help
 (global-set-key (kbd "C-h") 'spacemacs/kill-this-buffer)
 

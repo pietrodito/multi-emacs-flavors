@@ -21,6 +21,8 @@
 (env . (("SPACEMACSDIR" . "~/emacs/configs/spacemacs-develop")))))
 ("spacemacs-default-ess-lsp-backend" . ((user-emacs-directory . "~/emacs/flavors/spacemacs-default-ess-lsp-backend")
 (env . (("SPACEMACSDIR" . "~/emacs/configs/spacemacs-default-ess-lsp-backend")))))
+("spacemacs-default-backup" . ((user-emacs-directory . "~/emacs/flavors/spacemacs-default-backup")
+(env . (("SPACEMACSDIR" . "~/emacs/configs/spacemacs-default-backup")))))
 ("spacemacs-default" . ((user-emacs-directory . "~/emacs/flavors/spacemacs-default")
 (env . (("SPACEMACSDIR" . "~/emacs/configs/spacemacs-default")))))
  ;; SPACEMACS MULTIPLE CONFIGURATIONS ENDS HERE
