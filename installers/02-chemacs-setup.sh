@@ -7,4 +7,4 @@ mefs_indent_message "Chemacs setup..."
 
 $mefs_CHEMACSDIR/install.sh
 
-ln -sf $mefs_THISREPODIR/dot.emacs-profiles.el $HOME/.emacs-profiles.el
+ln -sf $mefs_CONFIGDIR/dot.emacs-profiles.el $HOME/.emacs-profiles.el

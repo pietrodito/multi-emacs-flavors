@@ -1,0 +1,9 @@
+#!/bin/bash
+
+. ./installers/source-to-export-vars.sh
+./installers/01-emacs-and-tools.sh
+./installers/02-chemacs-setup.sh
+./installers/03-clone-spacemacs-develop.sh
+./installers/04-multiple-spacemacs-configs.sh
+# ./installers/05-doom-setup.sh
+./installers/06-prepare-tools.sh
