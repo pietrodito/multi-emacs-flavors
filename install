@@ -7,3 +7,7 @@
 ./installers/04-multiple-spacemacs-configs.sh
 # ./installers/05-doom-setup.sh
 ./installers/06-prepare-tools.sh
+#TODO Make alias or bin commands with tools
+#./installers/07-setup-tools.sh
+
+
