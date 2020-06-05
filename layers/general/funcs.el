@@ -181,6 +181,7 @@ in the process and insert it in current buffer in a org
   ;; main
   (ulys/org//capture-helper-capture-with-yank-method 'yank-last-glimpse-from-buffer arg))
 
+;; ----- Org
 ;; config
 (defun ulys/config/org-tempo ()
   ;; In org mode : auto complete #+begin #+end
