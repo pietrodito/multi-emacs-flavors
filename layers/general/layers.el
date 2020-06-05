@@ -1,7 +1,7 @@
 (configuration-layer/declare-layers
  '(
    (shell :variables
-          shell-default-shell 'vterm
+          shell-default-shell 'ansi-term
           shell-default-height 30
           shell-default-position 'bottom)
    (helm :variables
@@ -23,6 +23,5 @@
 
    ;; Misc
    (spell-checking :variables spell-checking-enable-by-default nil)
-
    )
  )
