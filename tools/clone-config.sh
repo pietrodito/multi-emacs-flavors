@@ -1,5 +1,5 @@
 #!/bin/bash
-source /home/ulys/emacs/installers/../installers/source-to-set-variables.sh
+source /home/ulys/emacs/installers/../installers/source-to-export-vars.sh
 
 sudo rm -rf "$mefs_FLAVORDIR/$2/"
 sudo rm -rf "$mefs_CONFIGDIR/$2/"

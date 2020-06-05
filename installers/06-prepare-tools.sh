@@ -1,6 +1,8 @@
 #!/bin/bash
 
-LINETOINSERT="source $mefs_THISREPODIR/installers/source-to-set-variables.sh"
+mefs_indent_message "Preparing tools (directory-agnostic)..."
+
+LINETOINSERT="source $mefs_THISREPODIR/installers/source-to-export-vars.sh"
 
 cp -f ${mefs_THISREPODIR}/tools/helpers/*.sh ${mefs_THISREPODIR}/tools/
 

@@ -1,5 +1,5 @@
 #!/bin/bash
-source /home/ulys/emacs/installers/../installers/source-to-set-variables.sh
+source /home/ulys/emacs/installers/../installers/source-to-export-vars.sh
 
 mefs_CONFIGS=($(ls -AF $mefs_CONFIGDIR | grep /))
 
