@@ -17,6 +17,6 @@ do
     [ -d ${mefs_FLAVORDIR}/${conf} ] ||
         cp -r $mefs_FLAVORDIR/spacemacs-develop ${mefs_FLAVORDIR}/${conf}
 
-    sed -i "/$mefs_BEG_PATTERN/a ${mefs_TEMPLATE2//<conf>/$conf}" "$mefs_THISREPODIR/dot.emacs-profiles.el"
-    sed -i "/$mefs_BEG_PATTERN/a ${mefs_TEMPLATE1//<conf>/$conf}" "$mefs_THISREPODIR/dot.emacs-profiles.el"
+    sed -i "/$mefs_BEG_PATTERN/a ${mefs_TEMPLATE2//<conf>/$conf}" "$mefs_CONFIGDIR/dot.emacs-profiles.el"
+    sed -i "/$mefs_BEG_PATTERN/a ${mefs_TEMPLATE1//<conf>/$conf}" "$mefs_CONFIGDIR/dot.emacs-profiles.el"
 done

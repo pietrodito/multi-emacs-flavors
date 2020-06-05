@@ -7,10 +7,6 @@
 ("develop"  . ((user-emacs-directory . "~/emacs/flavors/spacemacs-develop")
               (env . (("SPACEMACSDIR" . "~/emacs/configs/spacemacs-develop")))))
  ;; SPACEMACS MULTIPLE CONFIGURATIONS STARTS HERE
-("spacemacs-test-clone" . ((user-emacs-directory . "~/emacs/flavors/spacemacs-test-clone")
-(env . (("SPACEMACSDIR" . "~/emacs/configs/spacemacs-test-clone")))))
-("spacemacs-test-12929" . ((user-emacs-directory . "~/emacs/flavors/spacemacs-test-12929")
-(env . (("SPACEMACSDIR" . "~/emacs/configs/spacemacs-test-12929")))))
 ("spacemacs-test" . ((user-emacs-directory . "~/emacs/flavors/spacemacs-test")
 (env . (("SPACEMACSDIR" . "~/emacs/configs/spacemacs-test")))))
 ("spacemacs-pietrodito" . ((user-emacs-directory . "~/emacs/flavors/spacemacs-pietrodito")
