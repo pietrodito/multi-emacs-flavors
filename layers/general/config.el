@@ -22,3 +22,16 @@
 ;; (ulys/config/org/odt-export-latexml)
 ;; (ulys/config/org/capture)
 ;; (ulys/config/org/file-apps)
+
+;; Org export: Define latex classes
+(with-eval-after-load 'org
+  (add-to-list 'org-latex-classes
+               '("report-without-part"
+                 "\\documentclass{report}"
+                 ("\\chapter{%s}" . "\\chapter{%s}")
+                 ("\\subsection{%s}" . "\\subsection*{%s}")
+                 ("\\subsection{%s}" . "\\subsection*{%s}")
+                 ("\\paragraph{%s}" . "\\paragraph*{%s}")
+                 )
+               )
+  )
