@@ -186,7 +186,7 @@ in the process and insert it in current buffer in a org
 (defun ulys/config/org-tempo ()
   ;; In org mode : auto complete #+begin #+end
   (require 'org-tempo))
-(defun ulys/config/org-minted ()
+(defun ulys/config/org/minted ()
   (setq org-latex-listings 'minted
         org-latex-packages-alist '(("" "minted"))
         org-latex-pdf-process
@@ -240,3 +240,8 @@ in the process and insert it in current buffer in a org
                                       (python     . t)
                                       (sql        . t))))
    '(org-confirm-babel-evaluate nil)))
+
+(defun ulys/config/org/agenda ()
+  (setq org-agenda-files
+    '("~/Nextcloud/org/mylife -.org" "~/Nextcloud/org/mywork -.org"))
+  )

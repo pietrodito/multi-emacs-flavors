@@ -18,3 +18,9 @@
 (global-set-key (kbd "<f3>") 'ulys/current-line-to-process)
 (global-set-key (kbd "<f4>") 'ulys/toggle-shell)
 (global-set-key (kbd "S-<f4>") 'ulys/force-toggle-shell)
+
+;; Org keybindings
+(spacemacs/set-leader-keys-for-major-mode 'org-mode "h" 'org-shiftleft)
+(spacemacs/set-leader-keys-for-major-mode 'org-mode "j" 'org-shiftup)
+(spacemacs/set-leader-keys-for-major-mode 'org-mode "k" 'org-shiftdown)
+(spacemacs/set-leader-keys-for-major-mode 'org-mode "l" 'org-shiftright)

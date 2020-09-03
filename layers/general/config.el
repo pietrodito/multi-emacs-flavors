@@ -1,5 +1,7 @@
 (setq undo-tree-auto-save-history t)
+(setq evil-want-fine-undo t)
 (setq vc-follow-symlinks t) ;; To edit .spacemacs without to be prompted each time
+;;(ulys/spacemacs-buffer-auto-org-mode)
 
 (setq hybrid-style-enable-hjkl-bindings t)
 
@@ -18,20 +20,9 @@
 
 (ulys/config/org/babel)
 (ulys/config/org/calendar)
-;; (ulys/config/org/minted)
+(ulys/config/org/agenda)
+(ulys/config/org/minted)
+;;(ulys/config/org/todo-keywords)
+;;(ulys/config/org/capture)
 ;; (ulys/config/org/odt-export-latexml)
-;; (ulys/config/org/capture)
 ;; (ulys/config/org/file-apps)
-
-;; Org export: Define latex classes
-(with-eval-after-load 'org
-  (add-to-list 'org-latex-classes
-               '("report-without-part"
-                 "\\documentclass{report}"
-                 ("\\chapter{%s}" . "\\chapter{%s}")
-                 ("\\subsection{%s}" . "\\subsection*{%s}")
-                 ("\\subsection{%s}" . "\\subsection*{%s}")
-                 ("\\paragraph{%s}" . "\\paragraph*{%s}")
-                 )
-               )
-  )
