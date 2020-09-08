@@ -17,6 +17,12 @@
 (setq org-list-allow-alphabetical t)
 (setq org-hide-emphasis-markers t)
 (with-eval-after-load 'org (require 'org-tempo) )
+(setq org-todo-keywords '((sequence "TODO" "WAITING" "SOMEDAY" "|"
+                                    "DONE" "CANCEL")))
+(setq org-todo-keyword-faces
+      '(("TODO" . "orange") ("WAITING" . "magenta") ("SOMEDAY" . "blue")
+        ("CANCELED" . "red") ("DONE" . "green"))
+      )
 
 (ulys/config/org/babel)
 (ulys/config/org/calendar)

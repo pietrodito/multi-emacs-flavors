@@ -242,6 +242,23 @@ in the process and insert it in current buffer in a org
    '(org-confirm-babel-evaluate nil)))
 
 (defun ulys/config/org/agenda ()
+  (defun update-google-diary ()
+    (defun replace-google-export ()
+      (delete-file "~/Nextcloud/org/diary/google-calendar-export")
+      (icalendar-import-file "~/Nextcloud/org/tools/pierrebalaye-at-gmail.ics"
+                             "~/Nextcloud/org/diary/google-calendar-export")
+      )
+    (when (file-newer-than-file-p
+           "~/Nextcloud/org/tools/pierrebalaye-at-gmail.ics"
+           "~/Nextcloud/org/diary/google-calendar-export")
+      (replace-google-export))
+    )
+  (setq diary-file "~/Nextcloud/org/diary/google-calendar-export")
+  (setq holiday-bahai-holidays nil)
+  (setq holiday-hebrew-holidays nil)
+  (setq holiday-islamic-holidays nil)
   (setq org-agenda-files
     '("~/Nextcloud/org/mylife -.org" "~/Nextcloud/org/mywork -.org"))
+  (setq org-agenda-include-diary t)
+  (add-hook 'org-agenda-mode-hook 'update-google-diary)
   )
