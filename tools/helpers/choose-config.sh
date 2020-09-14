@@ -10,7 +10,8 @@ function remove_last_char() {
     done
 }
 
-mefs_CONFIGS=`remove_last_char ${mefs_CONFIGS_with_slash[@]}`
+mefs_CONFIGS=(`remove_last_char ${mefs_CONFIGS_with_slash[@]}`)
+
 if [ $# -eq 0  ]
 then
     COUNTER=0
