@@ -1,7 +1,16 @@
 #!/bin/bash
 
-mefs_CONFIGS=($(ls -AF $mefs_CONFIGDIR | grep /))
+mefs_CONFIGS_with_slash=($(ls -AF $mefs_CONFIGDIR | grep /))
 
+
+function remove_last_char() {
+    for i in $@
+    do
+        echo ${i%?}
+    done
+}
+
+mefs_CONFIGS=`remove_last_char ${mefs_CONFIGS_with_slash[@]}`
 if [ $# -eq 0  ]
 then
     COUNTER=0

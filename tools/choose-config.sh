@@ -1,16 +1,7 @@
 #!/bin/bash
 source /home/ulys/emacs/installers/../installers/source-to-export-vars.sh
 
-mefs_CONFIGS_with_slash=($(ls -AF $mefs_CONFIGDIR | grep /))
-
-remove_last_char () {
-  for i in $@
-  do
-      echo ${i%?}
-  done
-}
-
-mefs_CONFIGS=(`remove_last_char ${mefs_CONFIGS_with_slash[@]}`)
+mefs_CONFIGS=($(ls -AF $mefs_CONFIGDIR | grep /))
 
 if [ $# -eq 0  ]
 then
