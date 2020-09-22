@@ -24,3 +24,6 @@
 (spacemacs/set-leader-keys-for-major-mode 'org-mode "j" 'org-shiftup)
 (spacemacs/set-leader-keys-for-major-mode 'org-mode "k" 'org-shiftdown)
 (spacemacs/set-leader-keys-for-major-mode 'org-mode "l" 'org-shiftright)
+
+;; Treemacs keybindings
+(setq aw-keys '(?1 ?2 ?3 ?4 ?5 ?6 ?7 ?8 ?9 ?0))

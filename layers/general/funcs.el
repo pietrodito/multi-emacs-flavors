@@ -264,6 +264,9 @@ in the process and insert it in current buffer in a org
   (setq holiday-bahai-holidays nil)
   (setq holiday-hebrew-holidays nil)
   (setq holiday-islamic-holidays nil)
+  (setq org-agenda-time-grid  '((daily today require-timed)
+                                (1200 1600)
+                                "......" "----------------"))
   (setq org-agenda-files
     '("~/Nextcloud/org/mylife -.org" "~/Nextcloud/org/mywork -.org"))
   (setq org-agenda-include-diary t)
