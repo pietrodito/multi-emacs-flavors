@@ -22,6 +22,10 @@
    (git :variables git-magit-status-fullscreen t)
 
    ;; Misc
-   (spell-checking :variables spell-checking-enable-by-default nil)
+   (spell-checking :variables
+                   spell-checking-enable-by-default t
+                   ;; spell-checking-enable-auto-dictionary t
+                   enable-flyspell-auto-completion t
+                   )
    )
  )

@@ -8,6 +8,14 @@
 ;; add time in powerline
 (display-time-mode 1)
 
+;; spell checking
+(with-eval-after-load "ispell"
+    (setq ispell-program-name "hunspell")
+    ;; ispell-set-spellchecker-params has to be called
+    ;; before ispell-hunspell-add-multi-dic will work
+    (ispell-set-spellchecker-params)
+    (ispell-hunspell-add-multi-dic "fr_FR,en_US")
+    (setq ispell-dictionary "fr_FR,en_US"))
 
 ;; New frame will open fullscreen
 (add-to-list 'default-frame-alist '(fullscreen . fullboth))
