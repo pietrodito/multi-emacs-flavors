@@ -29,8 +29,7 @@
                                     "DONE" "CANCEL")))
 (setq org-todo-keyword-faces
       '(("TODO" . "orange") ("WAITING" . "magenta") ("SOMEDAY" . "blue")
-        ("CANCELED" . "red") ("DONE" . "green"))
-      )
+        ("CANCELED" . "red") ("DONE" . "green")))
 
 (ulys/config/org/babel)
 (ulys/config/org/calendar)
